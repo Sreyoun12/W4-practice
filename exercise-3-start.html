@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout Exercise 3</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f3f3f3;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        header,
+        footer {
+            width: 80%;
+            padding: 1rem;
+            text-align: start;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        header {
+            background: #1e90ff;
+            box-shadow: 0 5px #0077ea;
+        }
+
+        footer {
+            background: #4169e1;
+            box-shadow: 0 5px #1d44b8;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            gap: 1rem;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+        }
+
+        .main {
+            flex: 3;
+            background: #3cb371;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 5px #2f8d59;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+
+        .item {
+            color: white;
+            width: 100px;
+            height: 100px;
+            background: #2f8d59;
+            box-shadow: 0 5px #226741;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            font-weight: bold;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            color: white;
+            flex: 1;
+            text-align: start;
+            background: #ff6347;
+            box-shadow: 0 5px #e02200;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            font-weight: bold;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+
+    <div class="container">
+        <section class="main">
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+        </section>
+
+        <aside class="sidebar">sidebar</aside>
+    </div>
+
+    <footer>footer</footer>
+</body>
+
+</html>
